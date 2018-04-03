@@ -1,0 +1,7 @@
+
+若在linux下 中文不能转换为图片，请安装中文字体：
+
+拷贝文件gbsn00lp.ttf到linux的文件夹：
+/usr/share/fonts/dejavu-lgc/下
+
+参考文档：http://www.bbtang.info/linux/805.html

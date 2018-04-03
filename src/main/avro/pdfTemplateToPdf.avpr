@@ -1,0 +1,27 @@
+{"namespace": "com.bdcor.util.temp2pdf.proto",
+ "protocol": "Template2Pdf",
+
+ "types": [
+     {	"name": "TemplateData", 
+     	"type": "record",
+      "fields": [
+          {"name": "template",   "type": "bytes"},
+          {"name": "params2",   "type":{"type": "map", "values": "string"}}
+      ]
+     },
+     {	"name": "PdfData", 
+     	"type": "record",
+      "fields": [
+          {"name": "pdfData",   "type": "bytes"}
+      ]
+     
+	 }
+ ],
+
+ "messages": {
+     "convert": {
+         "request": [{"name": "tempData", "type": "TemplateData"}],
+         "response": "PdfData"
+     }
+ }
+}

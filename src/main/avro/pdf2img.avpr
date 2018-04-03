@@ -1,0 +1,26 @@
+{"namespace": "com.bdcor.util.pdf2img.proto",
+ "protocol": "Pdf2Img",
+
+ "types": [
+     {	"name": "PdfData", 
+     	"type": "record",
+      "fields": [
+          {"name": "pdfBytes",   "type": "bytes"}
+      ]
+     },
+     {	"name": "ImgData", 
+     	"type": "record",
+      "fields": [
+          {"name": "imgBytes",   "type":{"type": "array","items":"bytes"}}
+      ]
+     
+	 }
+ ],
+
+ "messages": {
+     "convert": {
+         "request": [{"name": "pdfData", "type": "PdfData"}],
+         "response": "ImgData"
+     }
+ }
+}
